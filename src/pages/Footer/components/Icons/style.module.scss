@@ -1,0 +1,19 @@
+.icons {
+  display: flex;
+  gap: 3.375rem;
+  cursor: pointer;
+
+  svg {
+    color: #535353;
+
+    &:hover {
+      color: $b000;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .icons {
+    gap: 2rem;
+  }
+}

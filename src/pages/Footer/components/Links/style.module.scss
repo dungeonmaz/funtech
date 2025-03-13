@@ -1,0 +1,17 @@
+.links {
+  display: flex;
+  gap: 1.875rem;
+}
+
+@media (max-width: 600px) {
+  .links {
+    margin-top: 4rem;
+    align-self: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// TODO: adjust font size on different screen sizes
+$font-size-sm: 0.6325rem;
+$font-size-md: 0.7125rem;
+$font-size-lg: 1rem;
+$font-size-xl: 1.2rem;
+$font-size-xxl: 1.5rem;
+$font-size-4k: 2.25rem;
+
+html {
+  font-size: $font-size-sm;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: $font-size-sm;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: $font-size-md;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: $font-size-lg;
+  }
+}
+
+@media (min-width: 1921px) {
+  html {
+    font-size: $font-size-xl;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: $font-size-xxl;
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    font-size: $font-size-4k;
+  }
+}

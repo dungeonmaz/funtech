@@ -1,0 +1,72 @@
+.button {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  transition: 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 0.75rem;
+
+  &[disabled] {
+    pointer-events: none;
+  }
+
+  @extend %variant;
+}
+
+
+%variant {
+  &[data-variant="text"] {
+    color: $b800;
+    padding: 0.5rem 1.25rem;
+
+    &:hover:not([disabled]) {
+      background-color: #C3C3C3;
+      color: $b1000;
+    }
+  }
+
+  &[data-variant="contain"] {
+    color: $b000;
+    background-color: $b1000;
+    &[data-color='light'] {
+      background-color: $b000;
+      color: #141416;
+    }
+
+    &:hover:not([disabled]) {
+      background-color: #222222;
+      &[data-color='light'] {
+        background-color: $b100;
+      }
+    }
+
+    &[data-size='sm'] {
+      padding: 1rem 1.5rem;
+    }
+
+    &[data-size='md'] {
+      padding: 1.125rem 1.875rem;
+    }
+  }
+
+  &[data-variant="outline"] {
+    color: $b1000;
+    padding: 1.125rem 1.3125rem;
+    background-color: transparent;
+    
+    border: 2px $b1000 solid;
+    &[data-color='light'] {
+      border: 2px $b000 solid;
+      color: $b000;
+    }
+
+    &:hover:not([disabled]) {
+      background-color: $b200;
+      &[data-color='light'] {
+        background-color: $b200;
+        color: #1A1A1A;
+      }
+    }
+  }
+}
