@@ -26,6 +26,7 @@ export const Top = () => {
       </Typography>
       <div className={cl.top__carousel}>
         <AliceCarousel
+          mouseTracking
           ref={carousel}
           paddingLeft={convertRemToPx(size.width > 600 ? 15 : 8)}
           paddingRight={convertRemToPx(size.width > 600 ? 15 : 7)}

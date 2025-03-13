@@ -12,7 +12,11 @@ export const Header = () => {
   return (
     <div data-open={open} className={cl.header}>
       <div className={cl.header__info}>
-        <Icon name="Logo" size="3.3125rem" color="#141416" />
+        <Icon
+          name="Logo"
+          size={size.width > 600 ? "3.3125rem" : "4.625rem"}
+          color="#141416"
+        />
         {size.width > 600 ? (
           <>
             <Button variant="text">

@@ -51,7 +51,7 @@ export const Main = () => {
             fontFamily="Inter"
             weight="600"
             size="h6"
-            color="#676767"
+            color="#141416"
           >
             $20 bonus.
           </Typography>

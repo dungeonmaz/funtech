@@ -1,4 +1,5 @@
 .item {
+  pointer-events: none;
   background-color: $b000;
   box-shadow: 38.82px 11.76px 58.81px 0px #C7C7C799;
   width: 17.5625rem;
@@ -52,6 +53,10 @@
           align-items: center;
           gap: 0.125rem;
         }
+      }
+
+      button {
+        pointer-events: all;
       }
     }
   }
